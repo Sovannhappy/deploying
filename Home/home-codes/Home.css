@@ -1,0 +1,451 @@
+/*---------- Here is the general style control. ----------*/
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*---------- Here is styling for toolbar ----------*/
+.toolbar {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    gap: 12px;
+}
+.toolbar2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;  
+}
+
+.toolbar2 .svg-holder {
+    width: fit-content;
+}
+
+.toolbar-new {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+/*---------- Here is styling for element in tool bar----------*/
+.padding-left svg:hover{
+    cursor:pointer;
+
+}
+
+.padding-right input {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+.padding-right {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    padding-right: 38px;
+    width: 15%;
+}
+/*---------- Here is styling for toolbar hover effect----------*/
+.right-hover:hover {
+    color: gray;
+    cursor: pointer;
+}
+.svg-holder:hover {
+    color:gray;
+    cursor:pointer;
+}
+.padding-right:hover {
+    cursor:pointer;
+    color:gray;
+}
+/*---------- Here is the end of toolbar hover effect----------*/
+/*---------- Here is styling for container-searchbar ----------*/
+.container-searchbar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------- Here is styling for icon in container- searchbar ----------*/
+.container-searchbar i {
+    position: relative;
+    left: 15%;
+    bottom: -1.2px;
+    font-size: 1rem;
+}
+
+.svg-holder.logo-right {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+
+.container-searchbar input:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.padding-right input[placeholder] {
+    padding: 0 3.5rem;
+    font-size: 12px;
+}
+.dropdown input:hover {
+    color:gray;
+    cursor:pointer;
+
+}
+/*---------- hover list styling ----------*/
+.list-hover {
+    width: 100vw;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: white;
+}
+
+
+.list-hover ul li {
+    list-style: none;
+    margin-bottom: 5px; 
+
+}
+/*---------- hidden list hide ----------*/
+.list-hover.hide, .list-kids.hide, .list-accessories.hide, 
+.list-men.hide, .list-women.hide {
+    display: none;
+} 
+
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.container-searchbar{
+    position: relative;
+} 
+.pre-nav-design-icon-search{
+    position: absolute;
+}
+
+/* Here is codes blok for the top main display */
+
+.main-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    /* height: 50%; */
+}
+
+.home-grid-col {
+    width:auto;
+    height:auto;
+    align-items: center;
+
+}
+
+.btn-main {
+    background-color: black;
+    border:none;
+    color:white;
+    text-align: center;
+    font-size: 16;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+.home-main-product-display {
+    width:100%;
+    height:auto;
+}
+.main-grid-display {
+    width:100%;
+    /* position: relative; */
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width : 100%;
+    /* height : auto; */
+    min-width: 200px;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.overlay-text h4 {
+    white-space: nowrap;
+}
+/*---------- Button styling----------*/
+.home-img-button {
+    background-color:aliceblue;
+    border:none;
+    color:black;
+    text-align: center;
+    font-size: 16;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+
+}
+/*---------- styling for udder main display button----------*/
+
+.new-this-week {
+    display:grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    place-items: center;  
+    gap: 20px;
+}
+.new-this-week h2 {
+    justify-content: center;
+    text-align: center;
+    place-items: center;  
+}
+
+.middle-button {
+    justify-content: center;
+    align-items: center;
+}
+.middle-button button {
+    background-color:black;
+    border:none;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16;
+    cursor: pointer;
+    border-radius: 20px;
+    min-width: 100px;
+    padding: 10px 20px;
+}
+/*---------- styling for scrolling display.----------*/
+.scrollable-container {
+    display:flex;
+    width: 100%;
+}
+.scroller{
+    max-width: 3000px;
+    width:fit-content;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.scrollable-container img {
+    margin: 5px;
+}
+/*---------- The lower section are code for bottom nav-bar.----------*/
+
+.footer{
+    display : flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+}
+.upper-footer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap:5%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.upper-footer:hover {
+    height: fit-content;
+}
+
+.upper-footer li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+
+.lower-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:aliceblue;
+    background-color:black;
+    max-width: 100%;
+    padding: 40px 40px 0px;
+    list-style: none; 
+    justify-content: space-between;
+    height: 420px;
+} 
+
+.lower-footer-content {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 5%;
+
+} 
+.lower-footer-content ul {
+    list-style: none;
+    width: 245px;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+}
+
+.logo .ul-logo {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.sub-lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: aliceblue;
+    font-size: 12px;
+
+}
+.ul-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+
+}
+.lower-policy-bar {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.supply {
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-end;
+   list-style: none;
+   height:100%;
+
+
+}
+.lower {
+    display: flex;
+    justify-content: row;
+
+}
+.lower-policy-bar li{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.supply a {
+    display:flex;
+    order: 1;
+    justify-content: flex-end ;
+    align-items: end ;  
+} 
+
+.card-body { 
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+.home-main-product-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    width: 100%;
+    /* height: 100%; */
+    justify-content: center;
+}
+@media (max-width: 834px){
+    .main-display {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-grid-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    /* height: 100%; */
+    justify-content: center;
+    }
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translation(-50%, -50%);
+        color: white;
+        padding: 10%;
+        text-align: left;
+    }
+    
+}
+
+@media (max-width:420px) {
+    .overlay-text {
+        display:none;
+    }
+    .padding-left svg {
+        display:none;
+    }
+}
+
+
+
+
+

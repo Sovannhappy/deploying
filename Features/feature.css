@@ -1,0 +1,470 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*---------- Here is the styling of the toolbars.----------*/ 
+
+.toolbar {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    gap: 12px;
+}
+.toolbar2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px; 
+    position: relative; 
+}
+
+.toolbar-hover {
+    /* width: 40%;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+/*---------- Here is the end of tool bar.----------*/ 
+
+.padding-right {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    padding-right: 38px;
+    width: 15%;
+}
+/*---------- Here is hover styling.----------*/ 
+.right-hover:hover {
+    color: gray;
+    cursor: pointer;
+}
+.svg-holder:hover {
+    color:gray;
+    cursor:pointer;
+}
+.padding-right:hover {
+    cursor:pointer;
+    color:gray;
+}
+.padding-left svg:hover{
+    color: gray;
+    cursor:pointer;
+
+}
+.container-searchbar input:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.iclick:hover {
+    cursor:pointer;
+    color:gray;
+}
+/*---------- Styling for input column.----------*/ 
+.container-searchbar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-button {
+    background-color:rgb(134, 126, 126);
+    border:none;
+    cursor: pointer;
+    border-radius: 20px;
+    min-width: 100px;
+    padding: 10px 20px;
+}
+.container-searchbar i {
+    position: relative;
+    left: 25%;
+    bottom: -1.2px;
+    font-size: 1rem;
+} 
+
+.svg-holder.logo-right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.svg-holder.logo-right svg {
+    width: 50%;
+
+}
+
+.padding-right input {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid grey;
+    background-color: rgb(134, 126, 126);
+}
+
+
+.padding-right input[placeholder] {
+    padding: 0 3.5rem;
+    font-size: 15px;
+    color: black;
+}
+.release-filter-sort {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+#filter-icon {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+
+/*---------- This is styling for hidden lists. ----------*/
+
+.new-drop-down-collection {
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    /* display: none; */
+}
+.dropdown {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown > div {
+    width: 100%;
+    height: 100%;
+}
+
+.list-hover {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    padding-top: 20px;
+}
+/* .dropdown ul {
+    background-color: white;
+    z-index: 1;
+
+} */
+
+
+.list-hover ul li {
+    list-style: none;
+    margin-bottom: 5px; 
+
+}
+.dropdown.hide {
+    display: none;
+} 
+/*---------- Here is the end of the hidden list.----------*/
+
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.container-searchbar{
+    position: relative;
+} 
+.side-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+}
+
+/*---------- Here is the end of top navigation bar codes----------*/
+.promotion {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#promotion-default {
+    color:black;
+    animation: right 1s ease-out;
+}
+#promotion-default.hide {
+    display: none;
+}
+#promotion-hide {
+    position: absolute;
+    color:black;
+    animation: test 1s ease-in-out;
+}
+#promotion-hide.hide {
+    display: none;
+
+}
+
+ /*---------- Here is the end of upper promotion animation ----------*/ 
+.parent-display-filter {
+    width: 100%;
+    height: 100%;
+}
+.container-display-filter {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1%;
+}
+.filter-right {
+    display:flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-top: 1%;
+}
+.head-side-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/*---------- Here is the end of filter line.----------*/ 
+
+/*---------- Here is the beginning of main product display.----------*/ 
+.product-red-heading {
+    color: red;
+}
+/*---------- Here is the end of main product display.----------*/ 
+
+/*---------- Here is the beginning of leftside dropdown list accordion----------*/ 
+.icon-toggle {
+    font-size: 40px;
+}
+.side-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 1rem;
+}
+
+
+.filter-dropdown {
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    float: left;
+}
+.hidden-list-display {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.gender { 
+    display: flex;
+    flex-direction: column;
+}
+.checkbox {
+    font-size: 25px;
+    width: 20%;
+}
+
+.item ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+ }
+.inner-drop {
+    display: flex;
+    align-items: center;
+}
+
+.color-pallete {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+   
+}
+.icon-color {
+    font-size: 50px;
+    fill-opacity:100%;
+}
+.iconblack {
+    color:black;
+}
+.iconblue {
+    color:blue;
+}
+.icongreen {
+    color:green;
+}
+.icongray {
+    color:gray;
+}
+.iconmulti {
+    color:(#ff0000, #0000ff, #82524175, #825241, floralwhite);
+}
+.iconorange {
+    color:#F19813;
+}
+.iconpink {
+    color:#CA4BBD;
+}
+.iconpurple {
+    color:#9E2CE3;
+}
+.iconred {
+    color:red;
+}
+.iconwhite {
+    color:floralwhite;
+}
+.iconyellow {
+    color:#EECA0E;
+}
+
+.product-title {
+    color: red;
+}
+.nich-product {
+    color: gray;
+}
+.product-color {
+    color: gray;
+}
+.parent-container-product {
+    width: 100%;
+    height: auto;
+}
+.product-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, auto);
+    margin-left: 20%;
+    margin-right: 40px;
+    align-items: center;
+    width: 80%;
+
+}
+.product .img {
+    width:fit-content;
+}
+
+.card-section > img {
+    min-width: 100%;
+  } 
+
+.parent-display-filter {
+    display: none;
+}
+
+.side-list {
+    display: flex;
+}
+
+
+
+/*---------- The beginning of breakpoints controlling.----------*/ 
+@media (min-width: 590px) and (max-width: 1500px) {
+/*---------- Existing tablet style.----------*/ 
+    
+    .padding-right {
+        display: none;
+    }
+  
+    .logo-right {
+        display:none;
+    }
+  
+    .toolbar {
+        display: none;
+    }
+  
+    .container-searchbar i {  
+        width: 100%;
+        height: 100%;
+        font-size: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .release-filter-sort {
+        display: none;
+    }
+  
+    .product-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(18, auto);
+        align-items: center;
+        margin: 0%;
+        justify-content: center;
+    }
+    .product {
+        width:100%;
+    }
+  
+    .filter-dropdown {
+        display: none;
+    }
+  }
+@media (max-width: 590px) {
+    /*---------- Style for smaller screen size.----------*/ 
+    .toolbar {
+        display: none;
+    }
+    .toolbar-hover {
+        display: none;
+    }
+    .toolbar2 {
+        display: none;
+    }
+    .padding-left svg {
+        display: none;
+    }
+    .filter-dropdown {
+        display: none;
+    }
+    .release-filter-sort {
+        display: none;
+    }
+    .product-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(36, auto);
+        align-items: center;
+        margin: 0%;
+        justify-content: center;
+    }
+    .card-section p { 
+        display:flex;
+        justify-content: center;
+
+    }
+
+  }
+  
+/*---------- The end of breakpoints controlling.----------*/ 
+
+    
+ 

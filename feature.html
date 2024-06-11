@@ -22,7 +22,8 @@
   </head>
   <body> 
       <!-- /*----------The beginning of Upper navigation bar. ----------*/ -->
-      <div class="toolbar">
+    <header>
+      <nav class="toolbar">
         <!-- /*---------- This padding-left contain the upper nike logo (throwing ball and arrow star) ----------*/ -->
         <div class="padding-left">
           <!-- /*---------- Nike logo: a man throwing ball----------*/ -->
@@ -58,8 +59,8 @@
           </div>
           <div class="right-hover"><a> Sign In </a></div>
         </div>
-      </div>
-      <div class="toolbar2">
+      </nav>
+      <nav class="toolbar2">
         <!-- /*---------- Nike logo: The large lower tick ----------*/ -->
         <a href="./index.html">
         <svg
@@ -73,7 +74,7 @@
           fill="none"
         >
           <path
-            fill="currentColor"
+            fill="black"
             fill-rule="evenodd"
             d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
             clip-rule="evenodd"
@@ -133,11 +134,12 @@
             </svg>
           </div>
         </div>
-      </div>
-      <!-- /*---------- Here is the closing of toolbar and toolbar2. ----------*/ -->
-
+      </nav>
+    </header>
+      <!-- /*---------- Here is the closing of toolbar and toolbar2. ----------*/ --> 
+    <main>
       <!-- /*---------- Main hidden dropdown list. ----------*/ -->
-      <div class="new-drop-down-collection">
+      <section class="new-drop-down-collection">
         <div class="dropdown hide">
           <div class="list-hover list-feature">
             <ul>
@@ -373,46 +375,46 @@
             </ul>
           </div>
         </div>        
-      </div>
+      </section>
       <!-- /*---------- The end of main hidden dropdown list. ----------*/ -->
 
       <!-- /*----------The end of Upper navigation bar. ----------*/ -->
 
       <!-- /*---------- The beginning of upper promotion animation and filter code.----------*/ -->
-    <div class="promotion">
-      <div class="iclick"><i class="ri-arrow-left-s-line"></i></div>
-      <a id="promotion-default" href="#"> Mother's Day Sale: Extra 25% Off</a>
-      <a id="promotion-hide" class="hide" href="#"> Sale Up to 50% Off </a>
-      <div class="iclick"><i class="ri-arrow-right-s-line"></i></div>
-    </div>
-      
-    <div class ="release-filter-sort">
-      <h2> Release 1964  </h2>
-        <div id ="filter-icon">
-        <p> <strong> Hide Filters </strong></p>
-        <i class="ri-equalizer-line "></i>
-        <p> <strong> Sort </strong></p>
-        <i class="ri-arrow-down-s-line"></i>
-        </div>
-    </div>
-      <!-- /*---------- The end of upper promotion animation and filter code.----------*/ -->
-      <div class="parent-display-filter">
-        <div class="container-display-filter">
-          <h1>New Realease (1699)</h1>
-          <div class="filter-right">
-            <span> Show Filters</span>
-            <i class="ri-equalizer-2-line filter"></i>
-            <span> Short By </span>
+        <aside class="promotion">
+          <div class="iclick"><i class="ri-arrow-left-s-line"></i></div>
+          <a id="promotion-default" href="#"> Mother's Day Sale: Extra 25% Off</a>
+          <a id="promotion-hide" class="hide" href="#"> Sale Up to 50% Off </a>
+          <div class="iclick"><i class="ri-arrow-right-s-line"></i></div>
+        </aside>
+          
+        <aside class ="release-filter-sort">
+          <h2> Release 1964  </h2>
+            <div id ="filter-icon">
+            <p> <strong> Hide Filters </strong></p>
+            <i class="ri-equalizer-line "></i>
+            <p> <strong> Sort </strong></p>
             <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </aside>
+      <!-- /*---------- The end of upper promotion animation and filter code.----------*/ -->
+        <aside class="parent-display-filter">
+          <div class="container-display-filter">
+            <h1>New Realease (1699)</h1>
+            <div class="filter-right">
+              <span> Show Filters</span>
+              <i class="ri-equalizer-2-line filter"></i>
+              <span> Short By </span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
           </div>
-        </div>
-      </div>
+        </aside>
       <!-- /*----------The end to filter line----------*/ -->
 
       <!-- /*----------The beginning of main display ----------*/ -->
-      <div class="parent-container-product">
+      <section class="parent-container-product">
         <!-- /*----------The beginning of upper left side list. ----------*/ -->
-        <div class="filter-dropdown">
+        <section class="filter-dropdown">
           <div class="head-side-list">
             <h5>Pick Up Today</h5>
             <i class="ri-toggle-line icon-toggle"></i>
@@ -874,11 +876,11 @@
 
 
           </div>
-        </div>
+        </section>
         <!-- /*----------The is the end of left side list----------*/ -->
 
         <!-- /*----------The beginning of main product display.----------*/ -->
-        <div class="product-container">
+        <section class="product-container">
           <main
             class="product"
             data-card-title="Launching in SNKRS"
@@ -1203,10 +1205,11 @@
             data-card-product-color="1 Color"
             data-card-product-price="$ 115"
           ></main>
-        </div>
+        </section>
         <!-- /*----------The is the end of main product display.----------*/ -->
-      </div>
-    
+      </section>
+    </main>   
+
     <script src="./Features/feature.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,30 +1,24 @@
-# deploying
-# Nike clonning project
+# Overview
 
 ## Project Information
 
+Project Name : Website Cloning Project <br>
 Repository : https://git.clp.kr/anbschool/2nd/luck/hong-sovannary/personalprojectclonenike.git<br/>
-Owner : Sovannary Hong <br/>
-Server : GitLab <br/>
-Reference : [Nike.com](https://www.nike.com/) <br/># PersonalProjectCloneNike
-
-## Project Information
-
-Repository : https://git.clp.kr/anbschool/2nd/luck/hong-sovannary/personalprojectclonenike.git<br/>
-Owner : Sovannary Hong <br/>
-Server : GitLab <br/>
+Project Owner : Sovannary Hong <br/>
+Project Server : GitLab <br/>
 Reference : [Nike.com](https://www.nike.com/) <br/>
-Deployment : [link](https://deployingsovannaryhong-4p7dmk540-sovannhappys-projects.vercel.app/)
+
 
 ## Description
 
 My name is Sovannary Hong. This project serves as a demonstration of my understanding about html, css, and javascript during this term.
 
+This website cloning project consists of home_page and feature_page.
+
 ## Installation
-Downloads and installs Node.js v18.20.3 [Windows](https://nodejs.org/dist/v18.20.3/node-v18.20.3-x64.msi) [macOS](https://nodejs.org/dist/v18.20.3/node-v18.20.3.pkg) (if you have already installed, skip this step)
 
+Deployment : [link](https://sovannhappy.github.io/deploying/)
 
-```
 
 ## Prototype
 

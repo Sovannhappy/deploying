@@ -6,6 +6,7 @@ html, body {
 }
 
 /*---------- Here is styling for toolbar ----------*/
+
 .toolbar {
     display: flex;
     justify-content:space-between;

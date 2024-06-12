@@ -88,7 +88,9 @@ mainProductList.forEach((item) => {
 });
 mainProduct.innerHTML=mainGridHTML;
 
-    <!-- /*----------  The end of main product display. ----------*/ -->
+          /*----------  The end of main product display. ----------*/ 
 /*----------Here is the end of common component main product display ----------*/ 
+
+
 
 

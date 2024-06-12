@@ -46,6 +46,69 @@ accessories.addEventListener("mouseout", () => {
 })
 /*---------- Here is the end of hidden lists for new toolbar hover ----------*/
 /*---------- Here is the beginning of common component main product display ----------*/
+const mainProductList = [{
+    img: "./Home/home-images/home-desktop-img-1.png",
+    remark: "FLY WITH THE <br />JORDAN FAM",
+    description: "Join us for three days for exclusive drops, special offers, and more.",
+    button: "Shop"
+}]
+    <section class="main-display">
+      <img src="./Home/home-images/home-desktop-img-1.png" />
+      <div class="card-body">
+        <h3 class="card-title">
+          FLY WITH THE <br />
+          JORDAN FAM
+        </h3>
+        <p class="card-text">
+          Join us for three days for exclusive drops, special offers, and more.
+        </p>
+        <a href="feature.html"><button class="btn-main">Shop</button></a>
+      </div>
+    </section>
+
+    <section class="main-grid-display">
+      <main
+        class="image-container"
+        data-imgSrc="./Home/home-images/home-desktop-img-2.jpeg"
+        data-special-note="Mother's Day"
+        data-product-name="Gifts That Celebrate Mom"
+        data-button="Shop"
+      ></main>
+      <main
+        class="image-container"
+        data-imgSrc="./Home/home-images/home-desktop-img-3.jpeg"
+        data-special-note="New from Jordan"
+        data-product-name="AJ1High OG <br />
+          'Green Glow' & More"
+        data-button="Shop"
+      ></main>
+      <main
+        class="image-container"
+        data-imgSrc="./Home/home-images/home-desktop-img-4.jpeg"
+        data-special-note="New from Nike Running"
+        data-product-name="Journey Run"
+        data-button="Shop"
+      ></main>
+      <main
+        class="image-container"
+        data-imgSrc="./Home/home-images/home-desktop-img-5.jpeg"
+        data-special-note="Chet Holmgren's Picks"
+        data-product-name="On- and Off-Court Essentials"
+        data-button="Shop"
+      ></main>
+    </section>
+    <!-- /*----------  The end of main product display. ----------*/ -->
+    <section class="new-this-week">
+      <h2>NEW THIS WEEK</h2>
+      <div class="middle-button">
+        <a href="feature.html"><button>Shop Men's New Arrivals</button></a>
+        <a href="feature.html"><button>Shop Women's New Arrivals</button></a>
+      </div>
+    </section>
+
+
+
+
 document.querySelectorAll(".image-container").forEach((product) => {
     const productImgSrc = product.getAttribute ("data-imgSrc")
     const productNote = product.getAttribute("data-special-note")

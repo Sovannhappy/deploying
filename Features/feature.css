@@ -165,12 +165,6 @@ html, body {
     background-color: white;
     padding-top: 20px;
 }
-/* .dropdown ul {
-    background-color: white;
-    z-index: 1;
-
-} */
-
 
 .list-hover ul li {
     list-style: none;
@@ -247,7 +241,7 @@ html, body {
 /*---------- Here is the end of filter line.----------*/ 
 
 /*---------- Here is the beginning of main product display.----------*/ 
-.product-red-heading {
+#title{
     color: red;
 }
 /*---------- Here is the end of main product display.----------*/ 

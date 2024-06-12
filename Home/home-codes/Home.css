@@ -434,6 +434,12 @@ html, body {
         padding: 10%;
         text-align: left;
     }
+    .toolbar {
+        display:none;
+    }
+    .toolbar2 {
+        display:none;
+    }
     
 }
 
@@ -444,6 +450,12 @@ html, body {
     .padding-left svg {
         display:none;
     }
+   .toolbar {
+    display:none;
+   }
+   .toolbar2 {
+    display:none;
+   }
 }
 
 

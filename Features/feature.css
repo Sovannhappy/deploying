@@ -241,6 +241,32 @@ html, body {
 /*---------- Here is the end of filter line.----------*/ 
 
 /*---------- Here is the beginning of main product display.----------*/ 
+.parent-container-product {
+    width: 100%;
+    height: auto;
+}
+.product-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, auto);
+    margin-left: 20%;
+    margin-right: 40px;
+    align-items: center;
+    width: 80%;
+}
+.product img {
+    width: 100%;
+}
+
+
+
+.parent-display-filter {
+    display: none;
+}
+
+.side-list {
+    display: flex;
+}
 #title{
     color: red;
 }
@@ -335,44 +361,7 @@ html, body {
     color:#EECA0E;
 }
 
-.product-title {
-    color: red;
-}
-.nich-product {
-    color: gray;
-}
-.product-color {
-    color: gray;
-}
-.parent-container-product {
-    width: 100%;
-    height: auto;
-}
-.product-container {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(12, auto);
-    margin-left: 20%;
-    margin-right: 40px;
-    align-items: center;
-    width: 80%;
 
-}
-.product .img {
-    width:fit-content;
-}
-
-.card-section > img {
-    min-width: 100%;
-  } 
-
-.parent-display-filter {
-    display: none;
-}
-
-.side-list {
-    display: flex;
-}
 
 
 

@@ -81,44 +81,14 @@ mainProductList.forEach((item) => {
     <div class = "overlay-text">
     <p> ${item.remark} </p>
     <p> ${item.description}</p>
-    <button class = "home-img-button"> ${item.button} </button>
+    <button class = "home-img-button"> <a href="./feature.html">${item.button} </a></button>
     </div>
   </div>
   `;
 });
 mainProduct.innerHTML=mainGridHTML;
 
-
-
     <!-- /*----------  The end of main product display. ----------*/ -->
-   
-
-
-
-
-// document.querySelectorAll(".image-container").forEach((product) => {
-//     const productImgSrc = product.getAttribute ("data-imgSrc")
-//     const productNote = product.getAttribute("data-special-note")
-//     const productName = product.getAttribute("data-product-name")
-//     const productButton = product.getAttribute("data-button")
-    
-//     const overProductLabel = document.createElement("section");
-
-//     overProductLabel.classList.add("container", "over-label-section" ,)
-//     overProductLabel.innerHTML =`
-//     <img 
-//     src ="${productImgSrc}"/>
-//     <div class = "overlay-text">
-//         <p>${productNote}</p> 
-    
-//     <h4>${productName}</h4>
-//     <button class="home-img-button">${productButton}</button>
-//     </div>`
-//     product.appendChild(overProductLabel)
-//     const button = overProductLabel.querySelector(".home-img-button");
-//     button.addEventListener("click", function(){
-//         window.location.href = "/Features/feature-codes/feature.html";
-//     })
-// });
 /*----------Here is the end of common component main product display ----------*/ 
+
 

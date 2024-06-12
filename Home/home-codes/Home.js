@@ -46,92 +46,79 @@ accessories.addEventListener("mouseout", () => {
 })
 /*---------- Here is the end of hidden lists for new toolbar hover ----------*/
 /*---------- Here is the beginning of common component main product display ----------*/
-const mainProductList = [{
-    img: "./Home/home-images/home-desktop-img-1.png",
-    remark: "FLY WITH THE <br />JORDAN FAM",
-    description: "Join us for three days for exclusive drops, special offers, and more.",
+const mainProductList = [
+  {
+    img: "./Home/home-images/home-desktop-img-2.jpeg",
+    remark: "Mother's Day",
+    description: "Gifts That Celebrate Mom",
     button: "Shop"
-}]
-    <section class="main-display">
-      <img src="./Home/home-images/home-desktop-img-1.png" />
-      <div class="card-body">
-        <h3 class="card-title">
-          FLY WITH THE <br />
-          JORDAN FAM
-        </h3>
-        <p class="card-text">
-          Join us for three days for exclusive drops, special offers, and more.
-        </p>
-        <a href="feature.html"><button class="btn-main">Shop</button></a>
-      </div>
-    </section>
-
-    <section class="main-grid-display">
-      <main
-        class="image-container"
-        data-imgSrc="./Home/home-images/home-desktop-img-2.jpeg"
-        data-special-note="Mother's Day"
-        data-product-name="Gifts That Celebrate Mom"
-        data-button="Shop"
-      ></main>
-      <main
-        class="image-container"
-        data-imgSrc="./Home/home-images/home-desktop-img-3.jpeg"
-        data-special-note="New from Jordan"
-        data-product-name="AJ1High OG <br />
-          'Green Glow' & More"
-        data-button="Shop"
-      ></main>
-      <main
-        class="image-container"
-        data-imgSrc="./Home/home-images/home-desktop-img-4.jpeg"
-        data-special-note="New from Nike Running"
-        data-product-name="Journey Run"
-        data-button="Shop"
-      ></main>
-      <main
-        class="image-container"
-        data-imgSrc="./Home/home-images/home-desktop-img-5.jpeg"
-        data-special-note="Chet Holmgren's Picks"
-        data-product-name="On- and Off-Court Essentials"
-        data-button="Shop"
-      ></main>
-    </section>
-    <!-- /*----------  The end of main product display. ----------*/ -->
-    <section class="new-this-week">
-      <h2>NEW THIS WEEK</h2>
-      <div class="middle-button">
-        <a href="feature.html"><button>Shop Men's New Arrivals</button></a>
-        <a href="feature.html"><button>Shop Women's New Arrivals</button></a>
-      </div>
-    </section>
-
-
-
-
-document.querySelectorAll(".image-container").forEach((product) => {
-    const productImgSrc = product.getAttribute ("data-imgSrc")
-    const productNote = product.getAttribute("data-special-note")
-    const productName = product.getAttribute("data-product-name")
-    const productButton = product.getAttribute("data-button")
-    
-    const overProductLabel = document.createElement("section");
-
-    overProductLabel.classList.add("container", "over-label-section" ,)
-    overProductLabel.innerHTML =`
-    <img 
-    src ="${productImgSrc}"/>
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-3.jpeg",
+    remark: "New from Jordan",
+    description: "AJ1High OG <br /> 'Green Glow' & More",
+    button: "Shop"
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-4.jpeg",
+    remark: "New from Nike Running",
+    description: "Journey Run",
+    button: "Shop"
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-5.jpeg",
+    remark: "Chet Holmgren's Picks",
+    description: "On- and Off-Court Essentials",
+    button: "Shop"
+  },
+];
+const mainProduct = document.querySelector(".main-grid-display");
+let mainGridHTML = "";
+mainProductList.forEach((item) => {
+  mainGridHTML += `
+  <div class = "image-container">
+    <img src= ${item.img}>
     <div class = "overlay-text">
-        <p>${productNote}</p> 
-    
-    <h4>${productName}</h4>
-    <button class="home-img-button">${productButton}</button>
-    </div>`
-    product.appendChild(overProductLabel)
-    const button = overProductLabel.querySelector(".home-img-button");
-    button.addEventListener("click", function(){
-        window.location.href = "/Features/feature-codes/feature.html";
-    })
+    <p> ${item.remark} </p>
+    <p> ${item.description}</p>
+    <button class = "home-img-button"> ${item.button} </button>
+    </div>
+  </div>
+  `;
 });
+mainProduct.innerHTML=mainGridHTML;
+
+
+
+    <!-- /*----------  The end of main product display. ----------*/ -->
+   
+
+
+
+
+// document.querySelectorAll(".image-container").forEach((product) => {
+//     const productImgSrc = product.getAttribute ("data-imgSrc")
+//     const productNote = product.getAttribute("data-special-note")
+//     const productName = product.getAttribute("data-product-name")
+//     const productButton = product.getAttribute("data-button")
+    
+//     const overProductLabel = document.createElement("section");
+
+//     overProductLabel.classList.add("container", "over-label-section" ,)
+//     overProductLabel.innerHTML =`
+//     <img 
+//     src ="${productImgSrc}"/>
+//     <div class = "overlay-text">
+//         <p>${productNote}</p> 
+    
+//     <h4>${productName}</h4>
+//     <button class="home-img-button">${productButton}</button>
+//     </div>`
+//     product.appendChild(overProductLabel)
+//     const button = overProductLabel.querySelector(".home-img-button");
+//     button.addEventListener("click", function(){
+//         window.location.href = "/Features/feature-codes/feature.html";
+//     })
+// });
 /*----------Here is the end of common component main product display ----------*/ 
 

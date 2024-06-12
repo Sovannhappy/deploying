@@ -46,29 +46,51 @@ accessories.addEventListener("mouseout", () => {
 })
 /*---------- Here is the end of hidden lists for new toolbar hover ----------*/
 /*---------- Here is the beginning of common component main product display ----------*/
-document.querySelectorAll(".image-container").forEach((product) => {
-    const productImgSrc = product.getAttribute ("data-imgSrc")
-    const productNote = product.getAttribute("data-special-note")
-    const productName = product.getAttribute("data-product-name")
-    const productButton = product.getAttribute("data-button")
-    
-    const overProductLabel = document.createElement("section");
-
-    overProductLabel.classList.add("container", "over-label-section" ,)
-    overProductLabel.innerHTML =`
-    <img 
-    src ="${productImgSrc}"/>
+const mainProductList = [
+  {
+    img: "./Home/home-images/home-desktop-img-2.jpeg",
+    remark: "Mother's Day",
+    description: "Gifts That Celebrate Mom",
+    button: "Shop"
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-3.jpeg",
+    remark: "New from Jordan",
+    description: "AJ1High OG <br /> 'Green Glow' & More",
+    button: "Shop"
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-4.jpeg",
+    remark: "New from Nike Running",
+    description: "Journey Run",
+    button: "Shop"
+  },
+  {
+    img: "./Home/home-images/home-desktop-img-5.jpeg",
+    remark: "Chet Holmgren's Picks",
+    description: "On- and Off-Court Essentials",
+    button: "Shop"
+  },
+];
+const mainProduct = document.querySelector(".main-grid-display");
+let mainGridHTML = "";
+mainProductList.forEach((item) => {
+  mainGridHTML += `
+  <div class = "image-container">
+    <img src= ${item.img}>
     <div class = "overlay-text">
-        <p>${productNote}</p> 
-    
-    <h4>${productName}</h4>
-    <button class="home-img-button">${productButton}</button>
-    </div>`
-    product.appendChild(overProductLabel)
-    const button = overProductLabel.querySelector(".home-img-button");
-    button.addEventListener("click", function(){
-        window.location.href = "/Features/feature-codes/feature.html";
-    })
+    <p> ${item.remark} </p>
+    <p> ${item.description}</p>
+    <button class = "home-img-button"> <a href="./feature.html">${item.button} </a></button>
+    </div>
+  </div>
+  `;
 });
+mainProduct.innerHTML=mainGridHTML;
+
+          /*----------  The end of main product display. ----------*/ 
 /*----------Here is the end of common component main product display ----------*/ 
+
+
+
 
